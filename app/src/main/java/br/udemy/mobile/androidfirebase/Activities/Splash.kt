@@ -15,7 +15,7 @@ class Splash : AppCompatActivity() {
         val background = object : Thread() {
             override fun run() {
                 try {
-                    Thread.sleep(5000)
+                    Thread.sleep(2000)
                     startActivity(Intent(baseContext, LoginActivity::class.java))
                 } catch (e: Exception) {
                     e.printStackTrace()

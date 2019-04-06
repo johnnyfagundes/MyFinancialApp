@@ -15,19 +15,26 @@
         android:gravity="center"
         android:layout_margin="20dp">
 
+        <ImageView
+            android:id="@+id/splash"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:src="@drawable/app_logo" />
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="@color/colorText"
-            android:text="@string/login_title"
+            android:text="@string/app_name"
             android:textAlignment="center"
-            android:textSize="25sp" />
+            android:textSize="16sp"
+            android:layout_marginBottom="60dp"/>
 
         <EditText
             android:id="@+id/edtEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="10dp"
             android:textColor="@color/colorText"
             android:textColorHint="@color/colorText"
             android:hint="@string/email"
@@ -38,7 +45,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:layout_marginBottom="40dp"
+            android:layout_marginBottom="20dp"
             android:textColor="@color/colorText"
             android:textColorHint="@color/colorText"
             android:hint="@string/password"
