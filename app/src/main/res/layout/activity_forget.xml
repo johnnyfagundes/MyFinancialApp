@@ -3,31 +3,57 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:layout_margin="16dp"
     android:gravity="center"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="vertical"
     tools:context=".Activities.LoginActivity">
 
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Redefinir Senha"
-        android:textAlignment="center"
-        android:textSize="25sp"/>
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:orientation="vertical">
 
-    <EditText
-        android:id="@+id/txtEmail"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="textEmailAddress"
-        android:hint="E-mail"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Redefinir senha"
+            android:layout_marginBottom="30dp"
+            android:textColor="@color/colorText"
+            android:textAlignment="center"
+            android:textSize="25sp" />
 
-    <Button
-        android:id="@+id/btnRedefinir"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/colorAccent"
-        android:textColor="@android:color/white"
-        android:text="Redefinir senha"/>
+        <EditText
+            android:id="@+id/txtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/colorText"
+            android:textColorHint="@color/colorText"
+            android:hint="E-mail"
+            android:inputType="textEmailAddress" />
+
+        <Button
+            android:id="@+id/btnReset"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/colorAccent"
+            android:text="Redefinir senha"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite"
+            android:layout_marginBottom="10dp"
+            android:text="Cancelar"
+            android:textColor="@color/colorPrimaryDark" />
+
+
+    </LinearLayout>
 
 </LinearLayout>

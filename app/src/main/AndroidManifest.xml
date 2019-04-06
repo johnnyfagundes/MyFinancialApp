@@ -12,11 +12,16 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".Activities.Home"
-            android:label="@string/title_activity_home"
+            android:name=".Activities.LoginActivity"
             android:theme="@style/AppTheme.NoActionBar"></activity>
         <activity
-            android:name=".Activities.LoginActivity"
+            android:name=".Activities.CreateUser"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".Activities.ForgotPassword"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".Activities.Splash"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -24,10 +29,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Activities.ForgotPassword" />
-        <activity
-            android:name=".Activities.CreateUser"
-            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Activities.Home" />
     </application>
 
 </manifest>

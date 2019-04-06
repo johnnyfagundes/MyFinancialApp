@@ -16,8 +16,12 @@ class ForgotPassword : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_forget)
 
-        btnRedefinir.setOnClickListener {
+        btnReset.setOnClickListener {
             redefinir(txtEmail.text.toString(), this@ForgotPassword)
+        }
+
+        btnCancel.setOnClickListener {
+            startActivity(Intent(applicationContext, LoginActivity::class.java))
         }
     }
 
