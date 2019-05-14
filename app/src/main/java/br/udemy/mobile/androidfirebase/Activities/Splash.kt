@@ -16,7 +16,8 @@ class Splash : AppCompatActivity() {
             override fun run() {
                 try {
                     Thread.sleep(2000)
-                    startActivity(Intent(baseContext, LoginActivity::class.java))
+                    startActivity(Intent(baseContext, MainActivity::class.java))
+                    finish()
                 } catch (e: Exception) {
                     e.printStackTrace()
                 }
