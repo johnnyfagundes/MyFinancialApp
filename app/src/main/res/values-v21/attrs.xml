@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="Onboarding">
+        <attr name="pageIndicatorRadius" format="dimension" />
+        <attr name="pageIndicatorStrokeWidth" format="float" />
+        <attr name="pageIndicatorStrokeColor" format="color" />
+        <attr name="pageIndicatorColor" format="color" />
+        <attr name="pageIndicatorSelectedColor" format="color" />
+        <attr name="pageBackgroundColor" format="color" />
+    </declare-styleable>
+</resources>

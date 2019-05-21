@@ -70,7 +70,7 @@ class LoginActivity : AppCompatActivity(), GoogleApiClient.OnConnectionFailedLis
         mAuth.signInWithCredential(credential!!)
                 .addOnSuccessListener { authResult ->
                     val loggedEmail = authResult.user.email
-                    val loggedActivity = Intent(this@LoginActivity, Home::class.java)
+                    val loggedActivity = Intent(this, Home::class.java)
                     loggedActivity.putExtra("email", loggedEmail)
                     startActivity(loggedActivity)
 
